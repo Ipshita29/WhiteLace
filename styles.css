@@ -71,10 +71,23 @@ nav a:hover {
 }
 
 /* Banner Section */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-slide {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Image styling */
 .banner img {
     height: 500px;
     width: 100%;
-    margin: 1px;
 }
 
 /* Main Section */
