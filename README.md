@@ -34,3 +34,4 @@ Whitelace is a sleek and modern e-commerce platform dedicated to sneaker enthusi
 ## Contribution
 Contributions are welcome! Fork the repo, make your changes, and submit a pull request.
 
+i am new to this 
