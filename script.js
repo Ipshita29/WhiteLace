@@ -1,8 +1,13 @@
 function togglePopup() {
   const popup = document.getElementById('loginPopup');
-  popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+  if (popup) {
+    popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+  }
 }
 
+/**
+ * Handles the login submission.
+ */
 function handleLogin() {
   const user = document.getElementById('username')?.value;
   if (user) {
