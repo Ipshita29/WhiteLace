@@ -1,10 +1,3 @@
-# 👟 Whitelace - Sneaker E-Commerce Website
-
-**Whitelace** is a simple and modern sneaker e-commerce website created using **HTML, CSS, and JavaScript**.  
-The project focuses on building a clean UI, product pages, and basic shopping interactions.
-
-This project was built as a practice project to improve **frontend development skills**.
-
 ---
 
 ## ✨ Features
