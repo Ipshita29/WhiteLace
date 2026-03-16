@@ -1,62 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Sneakers</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhiteLace – Casual Sneakers</title>
+  <meta name="description" content="Trendy casual sneakers for everyday wear at WhiteLace.">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!--header section-->
-    <header>
-        <div class="navbar">
-            <h1 class="logo">WhiteLace</h1>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="./kidsneakers.html">Kids' Sneakers</a>
-                <a href="./running.html">Running Sneakers</a>
-            </nav>
-    </header>
 
-    <!--products section-->
-    <section class="products">
-        <div class="product">
-            <img src="cas1.png">
-            <h3>Classic White Sneakers</h3>
-            <p>$49.99</p>
-        </div>
-        <div class="product">
-            <img src="cas2.png">
-            <h3>Denim Style Sneakers</h3>
-            <p>$54.99</p>
-        </div>
-        <div class="product">
-            <img src="cas3.png">
-            <h3>Denim Style Sneakers</h3>
-            <p>$54.99</p>
-        </div>
-        <div class="product">
-            <img src="cas4.png">
-            <h3>Denim Style Sneakers</h3>
-            <p>$54.99</p>
-        </div>
-        <div class="product">
-            <img src="cas5.png">
-            <h3>Denim Style Sneakers</h3>
-            <p>$54.99</p>
-        </div>
-        <div class="product">
-            <img src="cas6.png">
-            <h3>Denim Style Sneakers</h3>
-            <p>$54.99</p>
-        </div>
-    </section>
+  <!-- HEADER -->
+  <header id="site-header">
+    <a href="index.html" class="logo">WhiteLace</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="kidsneakers.html">Kids</a>
+      <a href="running.html">Running</a>
+      <a href="casual.html" class="active">Casual</a>
+      <button class="btn-login" onclick="togglePopup()">Login</button>
+    </nav>
+  </header>
 
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('cas3.png');"></div>
+    <div class="page-hero-content">
+      <div class="section-label">Collection</div>
+      <h1>Casual Sneakers</h1>
+      <p>Effortlessly stylish for every day, every mood.</p>
+    </div>
+  </div>
 
-    <!--footer-->
-    <footer>
-        <p>&copy; 2025 Sneaker Shop. All rights reserved.</p>
-    </footer>
+  <!-- PRODUCTS -->
+  <section class="products-section">
+    <div class="products-grid">
 
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cas1.png" alt="Urban Classic" loading="lazy">
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <h4>Urban Classic</h4>
+          <div class="product-meta">
+            <span class="product-price">₹3,199</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cas2.png" alt="StreetWave" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>StreetWave Low</h4>
+          <div class="product-meta">
+            <span class="product-price">₹2,899</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cas3.png" alt="Pebble Suede" loading="lazy">
+          <span class="product-badge">Hot</span>
+        </div>
+        <div class="product-info">
+          <h4>Pebble Suede</h4>
+          <div class="product-meta">
+            <span class="product-price">₹4,099</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cas4.png" alt="DayDrift" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>DayDrift Canvas</h4>
+          <div class="product-meta">
+            <span class="product-price">₹2,499</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cas5.png" alt="SoftStep Air" loading="lazy">
+          <span class="product-badge">Sale</span>
+        </div>
+        <div class="product-info">
+          <h4>SoftStep Air</h4>
+          <div class="product-meta">
+            <span class="product-price">₹3,599</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cas6.png" alt="VelvetKick" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>VelvetKick Premium</h4>
+          <div class="product-meta">
+            <span class="product-price">₹5,299</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">WhiteLace</a>
+        <p>Premium sneakers for every occasion.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Shop</h5>
+        <a href="kidsneakers.html">Kids</a>
+        <a href="running.html">Running</a>
+        <a href="casual.html">Casual</a>
+      </div>
+      <div class="footer-links">
+        <h5>Help</h5>
+        <a href="#">Size Guide</a>
+        <a href="#">Returns</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 WhiteLace. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LOGIN POPUP -->
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="togglePopup()">×</span>
+      <h2>Welcome Back</h2>
+      <p class="sub">Sign in to your WhiteLace account</p>
+      <input type="text" placeholder="Username or Email">
+      <input type="password" placeholder="Password">
+      <button class="btn-login-submit">Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

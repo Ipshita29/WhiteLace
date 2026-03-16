@@ -1,90 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker Shop</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhiteLace – Premium Sneakers</title>
+  <meta name="description" content="WhiteLace – your go-to destination for premium sneakers. Shop kids, running, and casual styles.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="navbar">
-            <h1 class="logo">WhiteLace</h1>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="./kidsneakers.html">Kids' Sneakers</a>
-                <a href="./running.html">Running Sneakers</a>
-                <a href="./casual.html">Casual Sneakers</a>
-            </nav>
-            <div class="header-buttons">
-                <button class="profile-btn">Profile</button>
-                <button class="sign-in-btn">Sign In</button>
-                <button class="cart-btn">Cart</button>
-            </div>
-        </div>
-    </header>
 
-    <!-- 15% Off Banner -->
-    <div class="discount-banner">15% OFF on all sneakers!</div>
+  <!-- HEADER -->
+  <header id="site-header">
+    <a href="index.html" class="logo">WhiteLace</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="kidsneakers.html">Kids</a>
+      <a href="running.html">Running</a>
+      <a href="casual.html">Casual</a>
+      <button class="btn-login" onclick="togglePopup()">Login</button>
+    </nav>
+  </header>
 
-    <!--Banner Section-->
-    <div class="banner-slide">
-        
-        <div class="banner fade">
-          <img src="final.png" >
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-tag">New Season 2025</span>
+      <h1>Step Into <span>Excellence</span></h1>
+      <p>Handpicked sneakers for every stride — from the track to the street. Comfort meets culture.</p>
+      <div class="hero-btns">
+        <a href="casual.html" class="btn-primary">Shop Now</a>
+        <a href="running.html" class="btn-outline">Explore Running →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="section-label">Collections</div>
+    <div class="section-title">Shop By Category</div>
+    <div class="categories-grid">
+      <a href="kidsneakers.html" class="cat-card">
+        <img src="kid1.png" alt="Kids Sneakers" loading="lazy">
+        <div class="cat-card-overlay">
+          <h3>Kids</h3>
+          <p>Colorful & comfy for every age</p>
+          <span class="cat-arrow">Shop Now →</span>
         </div>
-      
-        <div class="banner fade">
-          <img src="slideban.png" >
+      </a>
+      <a href="running.html" class="cat-card">
+        <img src="final.png" alt="Running Sneakers" loading="lazy">
+        <div class="cat-card-overlay">
+          <h3>Running</h3>
+          <p>Built for speed & endurance</p>
+          <span class="cat-arrow">Shop Now →</span>
         </div>
-      
-        <div class="banner fade">
-          <img src="sildeban2.png" >
+      </a>
+      <a href="casual.html" class="cat-card">
+        <img src="cas1.png" alt="Casual Sneakers" loading="lazy">
+        <div class="cat-card-overlay">
+          <h3>Casual</h3>
+          <p>Everyday style, all-day comfort</p>
+          <span class="cat-arrow">Shop Now →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- BANNER STRIP -->
+  <div class="banner-strip">
+    <p>🔥 Free Shipping on all orders above ₹999</p>
+    <a href="casual.html">Grab the Deal</a>
+  </div>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured">
+    <div class="section-label">Top Picks</div>
+    <div class="section-title">Featured Sneakers</div>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt1.png" alt="AirFlow Pro" loading="lazy">
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <h4>AirFlow Pro X</h4>
+          <div class="product-meta">
+            <span class="product-price">₹4,299</span>
+            <span class="product-category">Running</span>
+          </div>
         </div>
       </div>
-      <br>
-   
-    <!-- main Section -->
-    <div class="main">
-        <h2>Find Your Perfect Sneakers</h2>
-        <p>High-quality sneakers at the best prices!</p>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt2.png" alt="CloudWalk 2" loading="lazy">
+          <span class="product-badge">Hot</span>
+        </div>
+        <div class="product-info">
+          <h4>CloudWalk 2.0</h4>
+          <div class="product-meta">
+            <span class="product-price">₹3,799</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt3.png" alt="Sprint Lite" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>Sprint Lite Kids</h4>
+          <div class="product-meta">
+            <span class="product-price">₹2,499</span>
+            <span class="product-category">Kids</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt4.png" alt="StreetBlock" loading="lazy">
+          <span class="product-badge">Sale</span>
+        </div>
+        <div class="product-info">
+          <h4>StreetBlock OG</h4>
+          <div class="product-meta">
+            <span class="product-price">₹5,199</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt5.png" alt="Volt Runner" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>Volt Runner Elite</h4>
+          <div class="product-meta">
+            <span class="product-price">₹6,499</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="slideban.png" alt="WhiteLace Classic" loading="lazy">
+          <span class="product-badge">Classic</span>
+        </div>
+        <div class="product-info">
+          <h4>WhiteLace Classic</h4>
+          <div class="product-meta">
+            <span class="product-price">₹3,199</span>
+            <span class="product-category">Casual</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Featured Products Section -->
-    <div class="featured-products">
-        <h2>Featured Sneakers</h2>
-        <img src="featpdt1.png" alt="featpdt1">
-        <img src="featpdt2.png" alt="featpdt2">
-        <img src="featpdt3.png" alt="featpdt3">
-        <img src="featpdt4.png" alt="featpdt4">
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">WhiteLace</a>
+        <p>Premium sneakers for every occasion. Step into your story.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Shop</h5>
+        <a href="kidsneakers.html">Kids</a>
+        <a href="running.html">Running</a>
+        <a href="casual.html">Casual</a>
+      </div>
+      <div class="footer-links">
+        <h5>Help</h5>
+        <a href="#">Size Guide</a>
+        <a href="#">Returns</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
-
-    <!-- About Section -->
-    <div class="about">
-        <h2>About Us</h2>
-        <p>Welcome to WhiteLace, your go-to destination for stylish, comfortable, and high-quality sneakers.<br>
-            As our first-ever e-commerce venture, WhiteLace is built with passion and a commitment to redefining everyday footwear.<br>
-            We believe that sneakers should be more than just shoes—they should be an extension of your style, confidence, and comfort.<br>
-            That’s why we curate the latest designs that blend fashion with functionality, ensuring you step out in style, no matter the occasion.<br>
-            At WhiteLace, we are dedicated to delivering a seamless shopping experience, exceptional quality, and a collection that speaks to sneaker lovers of all kinds.<br>
-            Whether you're looking for casual kicks, trendy streetwear, or all-day comfort, we’ve got you covered.</p>
+    <div class="footer-bottom">
+      <p>© 2025 WhiteLace. All rights reserved.</p>
+      <p>Made with ❤️ for sneaker lovers</p>
     </div>
+  </footer>
 
-    <!-- Contact Section -->
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@sneakershop.com</p>
-        <p>Phone: +91 9981425444</p>
+  <!-- LOGIN POPUP -->
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="togglePopup()">×</span>
+      <h2>Welcome Back</h2>
+      <p class="sub">Sign in to your WhiteLace account</p>
+      <input type="text" id="username" placeholder="Username or Email">
+      <input type="password" id="password" placeholder="Password">
+      <button class="btn-login-submit" onclick="handleLogin()">Login</button>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Sneaker Shop. All rights reserved.</p>
-    </footer>
-
-    <!--Linking JavaScript Here-->
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

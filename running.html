@@ -1,41 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Running Sneakers</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhiteLace – Running Sneakers</title>
+  <meta name="description" content="High-performance running sneakers at WhiteLace. Built for speed and endurance.">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Running Sneakers</h1>
-    </header>
-
+  <!-- HEADER -->
+  <header id="site-header">
+    <a href="index.html" class="logo">WhiteLace</a>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="./kidsneakers.html">Kids' Sneakers</a>
-        <a href="./running.html">Running Sneakers</a>
-        <a href="./casual.html">Casual Sneakers</a>
+      <a href="index.html">Home</a>
+      <a href="kidsneakers.html">Kids</a>
+      <a href="running.html" class="active">Running</a>
+      <a href="casual.html">Casual</a>
+      <button class="btn-login" onclick="togglePopup()">Login</button>
     </nav>
-    
-    
-    <section class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Lightweight Running Shoes">
-            <h3>Lightweight Running Shoes</h3>
-            <p>$69.99</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="High-Performance Sneakers">
-            <h3>High-Performance Sneakers</h3>
-            <p>$79.99</p>
-        </div>
-    </section>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Sneaker Shop. All rights reserved.</p>
-    </footer>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('banner.png');"></div>
+    <div class="page-hero-content">
+      <div class="section-label">Collection</div>
+      <h1>Running Sneakers</h1>
+      <p>Engineered for speed. Built for every runner.</p>
+    </div>
+  </div>
 
+  <!-- PRODUCTS -->
+  <section class="products-section">
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt1.png" alt="AirFlow Pro X" loading="lazy">
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <h4>AirFlow Pro X</h4>
+          <div class="product-meta">
+            <span class="product-price">₹4,299</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt5.png" alt="Volt Runner Elite" loading="lazy">
+          <span class="product-badge">Hot</span>
+        </div>
+        <div class="product-info">
+          <h4>Volt Runner Elite</h4>
+          <div class="product-meta">
+            <span class="product-price">₹6,499</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="final.png" alt="Sprint Boost" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>Sprint Boost 3</h4>
+          <div class="product-meta">
+            <span class="product-price">₹5,799</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="sildeban2.png" alt="PaceMax Ultra" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>PaceMax Ultra</h4>
+          <div class="product-meta">
+            <span class="product-price">₹7,199</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="featpdt3.png" alt="LiteFoot R2" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h4>LiteFoot R2</h4>
+          <div class="product-meta">
+            <span class="product-price">₹3,999</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <img src="slideban.png" alt="TrailMaster" loading="lazy">
+          <span class="product-badge">Sale</span>
+        </div>
+        <div class="product-info">
+          <h4>TrailMaster XT</h4>
+          <div class="product-meta">
+            <span class="product-price">₹4,899</span>
+            <span class="product-category">Running</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">WhiteLace</a>
+        <p>Premium sneakers for every occasion.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Shop</h5>
+        <a href="kidsneakers.html">Kids</a>
+        <a href="running.html">Running</a>
+        <a href="casual.html">Casual</a>
+      </div>
+      <div class="footer-links">
+        <h5>Help</h5>
+        <a href="#">Size Guide</a>
+        <a href="#">Returns</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 WhiteLace. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LOGIN POPUP -->
+  <div id="loginPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="togglePopup()">×</span>
+      <h2>Welcome Back</h2>
+      <p class="sub">Sign in to your WhiteLace account</p>
+      <input type="text" placeholder="Username or Email">
+      <input type="password" placeholder="Password">
+      <button class="btn-login-submit">Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
